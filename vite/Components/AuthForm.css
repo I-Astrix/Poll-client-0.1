@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .form-parent{
+    border: 2px solid rgba(162, 162, 162, 0.171);
+    border-radius: 65px;
+    max-width: 30rem;
+    width: 100%;
+    padding: 4rem;
+  }
+  .tab{
+    position: relative;
+    color: #1A3B5854;
+  }
+  .tab.active{
+    color: #1A3B58;
+  }
+  .tab.active:after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -10%;
+    width: 40%;
+    height: 3px ;
+    border-radius: 20px;
+    background: #1A3B58;
+  }
+  .form-info{
+    margin: 2rem 0;
+    line-height: 1.2;
+  }
+  .form-info small{
+    color: #999999;
+  }
+  .form-main{
+    padding: 0 2rem;
+    margin: 2rem 0;
+  }
+  .form-tabs{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+  .input-box{
+    margin: 1rem 0 0;
+  }
+  .input-box input{
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    border: 1px solid #CBDBEA;
+    outline: none;
+    font-size: 1rem;
+  }
+  .input-box input::placeholder{
+    color: #1A3B5854;
+    font-size: 0.8rem;
+  }
+  .input-box input:focus{
+    border: 1px solid #F65B2A;
+  }
+  .pwd{
+    position: relative;
+  }
+  .pwd svg{
+    position: absolute;
+    width: 18px;
+    right: 2%;
+    top: 50%;
+    color: #B6BDC5;
+    transform: translate(-50%, -50%);
+  }
+  .remember{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    font-size: 0.8rem;
+  }
+  .remember input{
+    margin-right: 0.5rem;
+    color: #329C89;
+  }
+  .confirm{
+    background: #329C89;
+    width: 100%;
+    padding: 0.8rem; 
+    margin: 0.2rem 0;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+  }
+  .confirm:active{
+    transform: scale(0.98);
+  }
+  
+  .status{
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0.3rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .status svg{
+    width: 15px;
+  }
+  .status.error{
+    color: #F65B2A;
+  }
+  .status.error{
+    color: #329C89;
+  }
